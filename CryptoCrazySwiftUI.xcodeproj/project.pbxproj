@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		7F9939B528B4EC2F00C62B33 /* CryptoCrazySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9939B428B4EC2F00C62B33 /* CryptoCrazySwiftUIApp.swift */; };
-		7F9939B728B4EC2F00C62B33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9939B628B4EC2F00C62B33 /* ContentView.swift */; };
+		7F9939B728B4EC2F00C62B33 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9939B628B4EC2F00C62B33 /* MainView.swift */; };
 		7F9939B928B4EC3100C62B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9939B828B4EC3100C62B33 /* Assets.xcassets */; };
 		7F9939BC28B4EC3100C62B33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9939BB28B4EC3100C62B33 /* Preview Assets.xcassets */; };
+		7F9939C728B4EEC900C62B33 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9939C628B4EEC900C62B33 /* CryptoCurrency.swift */; };
+		7F9939C928B4F9D300C62B33 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9939C828B4F9D300C62B33 /* WebService.swift */; };
+		7F9939CB28B5003300C62B33 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9939CA28B5003300C62B33 /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F9939B128B4EC2F00C62B33 /* CryptoCrazySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCrazySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9939B428B4EC2F00C62B33 /* CryptoCrazySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCrazySwiftUIApp.swift; sourceTree = "<group>"; };
-		7F9939B628B4EC2F00C62B33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F9939B628B4EC2F00C62B33 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7F9939B828B4EC3100C62B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F9939BB28B4EC3100C62B33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F9939C628B4EEC900C62B33 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		7F9939C828B4F9D300C62B33 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		7F9939CA28B5003300C62B33 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		7F9939B328B4EC2F00C62B33 /* CryptoCrazySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7F9939C528B4EE4A00C62B33 /* Service */,
+				7F9939C328B4EE2B00C62B33 /* ModelView */,
+				7F9939C428B4EE3200C62B33 /* View */,
+				7F9939C228B4EE2600C62B33 /* Model */,
 				7F9939B428B4EC2F00C62B33 /* CryptoCrazySwiftUIApp.swift */,
-				7F9939B628B4EC2F00C62B33 /* ContentView.swift */,
 				7F9939B828B4EC3100C62B33 /* Assets.xcassets */,
 				7F9939BA28B4EC3100C62B33 /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				7F9939BB28B4EC3100C62B33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F9939C228B4EE2600C62B33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F9939C628B4EEC900C62B33 /* CryptoCurrency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F9939C328B4EE2B00C62B33 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				7F9939CA28B5003300C62B33 /* CryptoViewModel.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		7F9939C428B4EE3200C62B33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F9939B628B4EC2F00C62B33 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F9939C528B4EE4A00C62B33 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7F9939C828B4F9D300C62B33 /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9939B728B4EC2F00C62B33 /* ContentView.swift in Sources */,
+				7F9939B728B4EC2F00C62B33 /* MainView.swift in Sources */,
+				7F9939C728B4EEC900C62B33 /* CryptoCurrency.swift in Sources */,
+				7F9939C928B4F9D300C62B33 /* WebService.swift in Sources */,
 				7F9939B528B4EC2F00C62B33 /* CryptoCrazySwiftUIApp.swift in Sources */,
+				7F9939CB28B5003300C62B33 /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
